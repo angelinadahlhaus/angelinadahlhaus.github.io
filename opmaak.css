@@ -8,3 +8,21 @@ h1 {
 color: rgb(242, 216, 253);
 margin-left: 20px;
 }
+ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: darkmagenta;
+
+}
+
+ul li a {
+display: block;
+color:rgb(194, 138, 247);
+text-align: center;
+padding: 5px;
+text-decoration: none;
+
+
+}

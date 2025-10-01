@@ -15,7 +15,70 @@
 <li> <a href= "compressie.html" > Compressie </a> </li>
 </ul>
 <h1></h1>
-<p></p>
+<p># 📦 Compressie – Uitleg
+
+## 🔑 Wat is compressie?
+Compressie betekent het verkleinen van de hoeveelheid data die een bestand inneemt. Dit gebeurt door patronen of redundantie in de data efficiënter op te slaan. Het doel is:
+- Minder opslagruimte gebruiken
+- Snellere overdracht van bestanden
+- Lagere kosten voor opslag en netwerkgebruik
+
+---
+
+## 🧩 Soorten compressie
+### Lossless (zonder verlies)
+- Alle originele data kan exact worden teruggehaald
+- Geschikt voor tekst, code, databestanden, configuraties
+- Voorbeelden: `gzip`, `zlib`, `lzma`, `zstd`
+
+### Lossy (met verlies)
+- Een deel van de informatie gaat verloren
+- De data blijft bruikbaar, maar minder gedetailleerd
+- Geschikt voor audio, video en afbeeldingen
+- Voorbeelden: `jpeg`, `mp3`, `mp4`, `webp`
+
+---
+
+## ⚙️ Belangrijke begrippen
+- **Compressieratio**: verhouding tussen originele en gecomprimeerde grootte  
+  _Bijvoorbeeld: 10 MB → 2 MB = ratio 5:1_
+- **Snelheid**: hoe snel kan een bestand gecomprimeerd of gedecomprimeerd worden?
+- **Geheugengebruik**: sommige algoritmes hebben veel RAM nodig
+- **Entropie**: de mate van “willekeurigheid” in data; hoe lager de entropie, hoe beter comprimeerbaar
+
+---
+
+## 🔄 Veelgebruikte algoritmes
+- **gzip (DEFLATE)** → snel en breed ondersteund
+- **brotli** → hoge ratio, populair voor webbestanden
+- **lzma / xz** → zeer hoge compressie, maar traag
+- **zstd (Zstandard)** → moderne balans tussen snelheid en compressie
+- **bzip2** → oudere standaard, minder efficiënt dan zstd of lzma
+
+---
+
+## ✅ Praktische tips
+- Tekst en code → gebruik lossless compressie (bijv. gzip, zstd)
+- Media (afbeeldingen, audio, video) → gebruik formaten met ingebouwde lossy compressie (jpg, mp3, mp4)
+- Grote archieven → kies voor `xz` of `zstd` afhankelijk van of maximale compressie of snelheid belangrijker is
+- Realtime toepassingen → kies snelle algoritmes zoals `zstd` of `gzip`
+
+---
+
+## 🚀 Voorbeeld in Python
+```python
+import gzip
+
+data = b"Dit is een voorbeeldtekst die we willen comprimeren."
+
+# Comprimeren
+compressed = gzip.compress(data)
+print("Gecomprimeerd:", compressed)
+
+# Decomprimeren
+original = gzip.decompress(compressed)
+print("Origineel:", original.decode())
+</p>
 
 
 </body>

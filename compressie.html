@@ -15,69 +15,70 @@
 <li> <a href= "compressie.html" > Compressie </a> </li>
 </ul>
 <h1></h1>
-<p># 📦 Compressie – Uitleg
+<p> 
+📦 Compressie <br> </br>
 
-## 🔑 Wat is compressie?
-Compressie betekent het verkleinen van de hoeveelheid data die een bestand inneemt. Dit gebeurt door patronen of redundantie in de data efficiënter op te slaan. Het doel is:
-- Minder opslagruimte gebruiken
-- Snellere overdracht van bestanden
-- Lagere kosten voor opslag en netwerkgebruik
+🔑 Wat is compressie? <br>
+Compressie betekent het verkleinen van de hoeveelheid data die een bestand inneemt. Dit gebeurt door patronen of redundantie in de data efficiënter op te slaan. Het doel is:<br>
+- Minder opslagruimte gebruiken<br>
+- Snellere overdracht van bestanden<br>
+- Lagere kosten voor opslag en netwerkgebruik<br></br>
 
----
 
-## 🧩 Soorten compressie
-### Lossless (zonder verlies)
-- Alle originele data kan exact worden teruggehaald
-- Geschikt voor tekst, code, databestanden, configuraties
-- Voorbeelden: `gzip`, `zlib`, `lzma`, `zstd`
 
-### Lossy (met verlies)
-- Een deel van de informatie gaat verloren
-- De data blijft bruikbaar, maar minder gedetailleerd
-- Geschikt voor audio, video en afbeeldingen
-- Voorbeelden: `jpeg`, `mp3`, `mp4`, `webp`
+🧩 Soorten compressie <br>
+Lossless (zonder verlies) <br>
+- Alle originele data kan exact worden teruggehaald<br>
+- Geschikt voor tekst, code, databestanden, configuraties<br>
+- Voorbeelden: gzip, zlib, lzma, zstd<br></br>
 
----
+Lossy (met verlies)<br>
+- Een deel van de informatie gaat verloren<br>
+- De data blijft bruikbaar, maar minder gedetailleerd<br>
+- Geschikt voor audio, video en afbeeldingen<br>
+- Voorbeelden: jpeg, mp3, mp4, webp<br></br>
 
-## ⚙️ Belangrijke begrippen
-- **Compressieratio**: verhouding tussen originele en gecomprimeerde grootte  
-  _Bijvoorbeeld: 10 MB → 2 MB = ratio 5:1_
-- **Snelheid**: hoe snel kan een bestand gecomprimeerd of gedecomprimeerd worden?
-- **Geheugengebruik**: sommige algoritmes hebben veel RAM nodig
-- **Entropie**: de mate van “willekeurigheid” in data; hoe lager de entropie, hoe beter comprimeerbaar
 
----
 
-## 🔄 Veelgebruikte algoritmes
-- **gzip (DEFLATE)** → snel en breed ondersteund
-- **brotli** → hoge ratio, populair voor webbestanden
-- **lzma / xz** → zeer hoge compressie, maar traag
-- **zstd (Zstandard)** → moderne balans tussen snelheid en compressie
-- **bzip2** → oudere standaard, minder efficiënt dan zstd of lzma
+⚙️ Belangrijke begrippen<br>
+- Compressieratio: verhouding tussen originele en gecomprimeerde grootte  <br>
+  -Bijvoorbeeld: 10 MB -> 2 MB = ratio 5:1<br></br>
+- Snelheid: hoe snel kan een bestand gecomprimeerd of gedecomprimeerd worden?<br>
+- Geheugengebruik: sommige algoritmes hebben veel RAM nodig<br>
+- Entropie: de mate van “willekeurigheid” in data; hoe lager de entropie, hoe beter comprimeerbaar<br></br>
 
----
 
-## ✅ Praktische tips
-- Tekst en code → gebruik lossless compressie (bijv. gzip, zstd)
-- Media (afbeeldingen, audio, video) → gebruik formaten met ingebouwde lossy compressie (jpg, mp3, mp4)
-- Grote archieven → kies voor `xz` of `zstd` afhankelijk van of maximale compressie of snelheid belangrijker is
-- Realtime toepassingen → kies snelle algoritmes zoals `zstd` of `gzip`
 
----
+🔄 Veelgebruikte algoritmes<br>
+- gzip (DEFLATE) → snel en breed ondersteund<br>
+- brotli → hoge ratio, populair voor webbestanden<br>
+- lzma / xz → zeer hoge compressie, maar traag<br>
+- zstd (Zstandard) → moderne balans tussen snelheid en compressie<br>
+- bzip2 → oudere standaard, minder efficiënt dan zstd of lzma<br></br>
 
-## 🚀 Voorbeeld in Python
-```python
-import gzip
 
-data = b"Dit is een voorbeeldtekst die we willen comprimeren."
 
-# Comprimeren
-compressed = gzip.compress(data)
-print("Gecomprimeerd:", compressed)
+✅ Praktische tips<br>
+- Tekst en code → gebruik lossless compressie (bijv. gzip, zstd)<br>
+- Media (afbeeldingen, audio, video) → gebruik formaten met ingebouwde lossy compressie (jpg, mp3, mp4)<br>
+- Grote archieven → kies voor 'xz' of 'zstd' afhankelijk van of maximale compressie of snelheid belangrijker is<br>
+- Realtime toepassingen → kies snelle algoritmes zoals zstd of gzip<br></br>
 
-# Decomprimeren
-original = gzip.decompress(compressed)
-print("Origineel:", original.decode())
+
+
+🚀 Voorbeeld in Python <br>
+python<br>
+import gzip<br></br>
+
+data = b "Dit is een voorbeeldtekst die we willen comprimeren."<br></br>
+
+Comprimeren<br>
+compressed = gzip.compress(data)<br>
+print("Gecomprimeerd:", compressed)<br></br>
+
+Decomprimeren<br>
+original = gzip.decompress(compressed)<br>
+print("Origineel:", original.decode())<br></br>
 </p>
 
 

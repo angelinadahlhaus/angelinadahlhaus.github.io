@@ -1,20 +1,20 @@
 body { 
 
-background-color: rgb(194, 138, 247);  
+background-color: rgb(194, 138, 247);   /*dit is de kleur van de achtergrond*/
 
 
 }
 h1 {
-color: rgb(242, 216, 253);
+color: rgb(242, 216, 253); /*dit is de kleur van de titels*/
 margin-left: 20px;
 }
 ul{
- /*jjbbjh*/
+ 
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
-background-color: darkmagenta;
+background-color: darkmagenta; /*dit is de kleur van het menubalk*/
 
 }
 ul li {
@@ -30,13 +30,13 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #fddaff;
+  background-color: #fddaff; /*dit is de kleur als je iets in het menubalk wilt aanklikken*/
 }
 
 
 ul li a {
 display: block;
-color:rgb(194, 138, 247);
+color:rgb(194, 138, 247); /*dit is de kleur van de tekst in het menubalk*/
 text-align: center;
 padding: 5px;
 text-decoration: none;
@@ -45,5 +45,5 @@ text-decoration: none;
 }
 li{
 
-width: 200px;
+width: 200px; /*dit is hoever de woorden in het menubalk uit elkaar staan*/
 }
